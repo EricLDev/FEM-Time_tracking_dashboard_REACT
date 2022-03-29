@@ -1,0 +1,75 @@
+.card {
+    border-radius: 1rem;
+    margin: 1.25rem 0;
+
+}
+
+.background {
+    height: 2.25rem;
+    position: relative;
+
+}
+
+.background img {
+    mix-blend-mode: darken;
+    position: absolute;
+    right: 1rem;
+    top: -.5rem;
+}
+
+.reportItem {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.reportItem:hover {
+    background-color: hsl(237, 44%, 31%);
+
+}
+
+.reportItem .title, .reportItem .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.title {
+    margin-top: 1rem;
+}
+
+.title>p:nth-of-type(1), .stats>p:nth-of-type(1) {
+    color: #fff
+}
+
+.title p {
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.lastWeek p, .dots p {
+    color: hsl(236, 100%, 87%);
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.dots:hover {
+    filter: brightness(0) invert(1)
+}
+
+.stats>p:nth-of-type(1) {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.lastWeek p {
+    font-size: .85rem;
+    ;
+}

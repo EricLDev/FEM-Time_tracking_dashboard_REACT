@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Navigation.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import jeremy from "../../images/image-jeremy.png";
 
 const Navigation = () => {
+	const [currentLink, setCurrentLink] = useState("");
+
+	let color = {};
+	switch (currentLink) {
+		case "daily":
+			color = { color: "#fff" };
+			break;
+		case "weekly":
+			color = { color: "#fff" };
+			break;
+		case "monthly":
+			color = { color: "#fff" };
+			break;
+		default:
+			color = {};
+	}
+
 	return (
 		<div className={classes.navigation}>
 			<header>
@@ -16,13 +33,19 @@ const Navigation = () => {
 			<nav>
 				<ul>
 					<li>
-						<Link to="/">Daily</Link>
+						<NavLink style={currentLink === "daily" ? color : null} to="/" onClick={() => setCurrentLink("daily")}>
+							Daily
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/weekly-report">Weekly</Link>
+						<NavLink style={currentLink === "weekly" ? color : null} to="/weekly-report" onClick={() => setCurrentLink("weekly")}>
+							Weekly
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/monthly-report">Monthly</Link>
+						<NavLink style={currentLink === "monthly" ? color : null} to="/monthly-report" onClick={() => setCurrentLink("monthly")}>
+							Monthly
+						</NavLink>
 					</li>
 				</ul>
 			</nav>
