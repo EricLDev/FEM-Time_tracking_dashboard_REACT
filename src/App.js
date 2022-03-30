@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Layout from "components/layout/Layout";
 import DailyReport from "./components/pages/DailyReport";
 import WeeklyReport from "./components/pages/WeeklyReport";
@@ -30,7 +30,7 @@ function App() {
 		<div className="App">
 			<Layout>
 				<Routes>
-					<Route path="" element={<Navigate replace to="/weekly-report" />}></Route>
+					<Route path="" element={<WeeklyReport data={data} />}></Route>
 					<Route path="/daily-report" element={<DailyReport data={data} />}></Route>
 					<Route path="/weekly-report" element={<WeeklyReport data={data} />}></Route>
 					<Route path="/monthly-report" element={<MonthlyReport data={data} />}></Route>
