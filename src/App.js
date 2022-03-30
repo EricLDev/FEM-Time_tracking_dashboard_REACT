@@ -30,7 +30,7 @@ function App() {
 		<div className="App">
 			<Layout>
 				<Routes>
-					<Route path="/" element={<Navigate replace to="/weekly-report" />}></Route>
+					<Route path="/FEM-Time_tracking_dashboard_REACT/" element={<Navigate replace to="/weekly-report" />}></Route>
 					<Route path="/daily-report" element={<DailyReport data={data} />}></Route>
 					<Route path="/weekly-report" element={<WeeklyReport data={data} />}></Route>
 					<Route path="/monthly-report" element={<MonthlyReport data={data} />}></Route>
