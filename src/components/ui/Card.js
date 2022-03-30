@@ -15,27 +15,27 @@ const Card = (props) => {
 	switch (props.title) {
 		case "Work":
 			icon = work;
-			background = { backgroundColor: "hsl(15, 100%, 70%)" };
+			background = { backgroundColor: "hsl(15, 100%, 70%)", gridArea: "work" };
 			break;
 		case "Play":
 			icon = play;
-			background = { backgroundColor: "hsl(195, 74%, 62%)" };
+			background = { backgroundColor: "hsl(195, 74%, 62%)", gridArea: "play" };
 			break;
 		case "Study":
 			icon = study;
-			background = { backgroundColor: "hsl(348, 100%, 68%)" };
+			background = { backgroundColor: "hsl(348, 100%, 68%)", gridArea: "study" };
 			break;
 		case "Exercise":
 			icon = exercise;
-			background = { backgroundColor: "hsl(145, 58%, 55%)" };
+			background = { backgroundColor: "hsl(145, 58%, 55%)", gridArea: "exercise" };
 			break;
 		case "Social":
 			icon = social;
-			background = { backgroundColor: "hsl(264, 64%, 52%)" };
+			background = { backgroundColor: "hsl(264, 64%, 52%)", gridArea: "social" };
 			break;
 		case "Self Care":
 			icon = selfcare;
-			background = { backgroundColor: "hsl(43, 84%, 65%)" };
+			background = { backgroundColor: "hsl(43, 84%, 65%)", gridArea: "selfcare" };
 			break;
 		default:
 			icon = null;

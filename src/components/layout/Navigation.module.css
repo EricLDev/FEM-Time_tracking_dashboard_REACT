@@ -1,6 +1,7 @@
 .navigation {
     background-color: hsl(235, 46%, 20%);
     border-radius: 1rem;
+    grid-area: navigation;
 }
 
 .navigation header {
@@ -52,4 +53,52 @@
 
 .navigation ul li a:hover, .navigation ul li a:active {
     color: #fff
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-rows: 70% 30%;
+    }
+
+    .navigation header {
+        flex-direction: column;
+    }
+
+    .navigation img {
+        width: 4.25rem;
+        height: 4.25rem;
+    }
+
+    .headerTitle {
+        margin-top: 2rem;
+        text-align: left;
+        padding: 0;
+    }
+
+    .headerTitle p:nth-child(1) {
+        font-size: .75rem;
+    }
+
+    .headerTitle p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .navigation nav {
+        padding: 0 1.5rem;
+    }
+
+    .navigation nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0 0 .5rem 0;
+        height: 100%
+    }
+
+    .navigation ul li a {
+        font-size: .85rem;
+    }
 }

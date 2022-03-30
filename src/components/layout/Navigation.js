@@ -33,7 +33,7 @@ const Navigation = () => {
 			<nav>
 				<ul>
 					<li>
-						<NavLink style={currentLink === "daily" ? color : null} to="/" onClick={() => setCurrentLink("daily")}>
+						<NavLink style={currentLink === "daily" ? color : null} to="/daily-report" onClick={() => setCurrentLink("daily")}>
 							Daily
 						</NavLink>
 					</li>
