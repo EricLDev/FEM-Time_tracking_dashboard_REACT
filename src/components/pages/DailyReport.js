@@ -12,7 +12,10 @@ const DailyReport = () => {
 			},
 		})
 			.then((response) => response.json())
-			.then((data) => setData(data))
+			.then((data) => {
+				data = JSON.stringify(data);
+				setData(data);
+			})
 			.catch((error) => console.log(error));
 	};
 	console.log(data);
