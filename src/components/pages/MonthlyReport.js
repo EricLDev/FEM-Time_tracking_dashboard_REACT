@@ -5,7 +5,7 @@ const MonthlyReport = () => {
 	const [data, setData] = useState([]);
 
 	const getData = async () => {
-		await fetch("data.json", {
+		await fetch("%PUBLIC_URL%/data.json", {
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
