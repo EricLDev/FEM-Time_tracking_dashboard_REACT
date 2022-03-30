@@ -10,7 +10,7 @@ function App() {
 	const [data, setData] = useState([]);
 
 	const getData = async () => {
-		await fetch("./data.json", {
+		await fetch("data.json", {
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
