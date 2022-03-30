@@ -5,7 +5,7 @@ const DailyReport = () => {
 	const [data, setData] = useState([]);
 
 	const getData = async () => {
-		await fetch("%PUBLIC_URL%/data.json", {
+		await fetch("./data.json", {
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
