@@ -10,7 +10,7 @@ function App() {
 	const [data, setData] = useState([]);
 
 	const getData = async () => {
-		await fetch("data.json", {
+		await fetch("FEM-Time_tracking_dashboard_REACT/data.json", {
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
