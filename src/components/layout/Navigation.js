@@ -33,17 +33,17 @@ const Navigation = () => {
 			<nav>
 				<ul>
 					<li>
-						<NavLink style={currentLink === "daily" ? color : null} to="/daily-report" onClick={() => setCurrentLink("daily")}>
+						<NavLink style={currentLink === "daily" ? color : null} to="/FEM-Time_tracking_dashboard_REACT/daily-report" onClick={() => setCurrentLink("daily")}>
 							Daily
 						</NavLink>
 					</li>
 					<li>
-						<NavLink style={currentLink === "weekly" ? color : null} to="/weekly-report" onClick={() => setCurrentLink("weekly")}>
+						<NavLink style={currentLink === "weekly" ? color : null} to="/FEM-Time_tracking_dashboard_REACT/weekly-report" onClick={() => setCurrentLink("weekly")}>
 							Weekly
 						</NavLink>
 					</li>
 					<li>
-						<NavLink style={currentLink === "monthly" ? color : null} to="/monthly-report" onClick={() => setCurrentLink("monthly")}>
+						<NavLink style={currentLink === "monthly" ? color : null} to="/FEM-Time_tracking_dashboard_REACT/monthly-report" onClick={() => setCurrentLink("monthly")}>
 							Monthly
 						</NavLink>
 					</li>
