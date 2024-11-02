@@ -1,7 +1,7 @@
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-component-using-reactfetch-jsonroutergridflexbox-HJlAq-Mm9]
-- Live Site URL: [https://ericl81.github.io/FEM-Time_tracking_dashboard_REACT/]
+- Live Site URL: [https://ericldev.github.io/FEM-Time_tracking_dashboard_REACT/]
 
 # Frontend Mentor - Time tracking dashboard
 
